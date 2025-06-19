@@ -3,9 +3,7 @@ import { Modules } from "../component/Modules/Modules"
 export function Lab(){
     return (
         <>
-        <Modules></Modules>
-        <Header />
-        Lab
+        lab
         </>
     )
 }

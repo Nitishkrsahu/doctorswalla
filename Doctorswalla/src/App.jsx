@@ -15,6 +15,7 @@ function App(){
                 <Route path="/medicine" element={<Medicine />}/>
                 <Route path="/neurology" element={<Neurology />}/>
                 <Route path="/cardiology" element={<Cardiology />}/>
+                <Route path="*" element={<div>Page Not Found</div>}></Route>
             </Routes>
         </Router>
         </>

@@ -7,9 +7,13 @@ li{
 nav ul li a{
     text-decoration: none;
     padding-left: 20px;
-    color: #000;
+    color: #fff;
 }
 header{
-    background-color: aquamarine;
+    background-color: #000000;
     padding: 0px 150px;
+}
+div h2 a{
+    text-decoration: none;
+    color: #fff;
 }
