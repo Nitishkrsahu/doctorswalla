@@ -1,0 +1,15 @@
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: #000;
+}
+header{
+    background-color: aquamarine;
+    padding: 0px 150px;
+}
