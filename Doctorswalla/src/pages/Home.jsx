@@ -4,6 +4,7 @@ import { Modules } from "../component/Modules/Modules"
 import { Button } from "@mui/material"
 import axios from "axios"
 import { BookingCard } from "../component/doctor-card/bookingcard"
+import '../App.css'
 export function Home() {
     const [doctor, setDoctor] = useState({})
     useEffect(() => {
@@ -18,11 +19,13 @@ export function Home() {
             <Header location="Hydrebad" tel="+918651295487" brand="Doctorswalla"/>
             <Modules />
             <section className="container-fluid mt-3">
+                <div style={{height: '250px'}}>
+                    <img src="./Banner/par.webp" alt="banner" style={{objectFit: 'cover', height: '100%', width: '100%'}}/>
+                </div>
                 <div className="d-flex justify-content-center">
                     <div className="input-group w-50">
-                        <span className="bi bi-geo-alt-fill input-group-text bg-dark text-white"></span>
-                        <input type="text" className="form-control" placeholder="eg:- Doctor, Hospital" />
-                        <span className="bi bi-search bg-success input-group-text text-white"></span>
+                        <input type="text" className="form-control bg-black text-white" placeholder="eg:- Doctor, Hospital" />
+                        <span className="bi bi-search bg-dark input-group-text text-white"></span>
                     </div>
                 </div>
                 <div className="row g-2 justify-content-center mt-4">
@@ -36,7 +39,6 @@ export function Home() {
                                 key={item.doctor_id}
                             />
                             )
-
                         }
                         )
                     }
